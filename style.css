@@ -1,0 +1,95 @@
+* {
+	--corner-radius: 25px;
+	--album-art-size: 50px;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+#statusContainer {
+	font-weight: 500;
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+#mainContainer {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+	display: flex;
+	position: absolute;
+	height: var(--album-art-size);
+	margin: 20px;
+	width: 100%;
+	max-width: 400px;
+	bottom: calc(50% - 20px);
+	left: 50%;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+#songInfoBox {
+	display: none;
+	position: relative;
+	width: calc(100%);
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 auto;
+	justify-content: center;
+	z-index: 1;
+	overflow: hidden;
+	z-index: 4;
+}
+
+#IAmRunningOutOfNamesForTheseBoxes {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	margin: 0 5px;
+}
+
+#artistLabel {
+	font-size: 14px;
+	font-weight: 400;
+	white-space: nowrap;
+	text-align: left;
+}
+
+#songLabel {
+	font-size: 14px;
+	font-weight: 400;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.text-show {
+	opacity: 1;
+	transition: all 0.25s ease;
+}
+
+.text-fade {
+	opacity: 0;
+	transition: all 0.25s ease;
+}
+
+#backgroundArt, #backgroundImage, #backgroundImageBack {
+  display: none;
+}
+
+/* .label {
+	font-size: 14px;
+	font-weight: 400;
+	margin-right: 5px;
+} */
+
+.dash {
+	margin: 5px;
+}
